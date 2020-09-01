@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ACDE2F66-F07F-431E-8130-2984C489D326}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GlobalLeague</RootNamespace>
+    <AssemblyName>GlobalLeague</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Captain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Captain.Designer.cs">
+      <DependentUpon>Captain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FightingGameSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FightingGameSelection.Designer.cs">
+      <DependentUpon>FightingGameSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GLModes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GLModes.Designer.cs">
+      <DependentUpon>GLModes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalLeague.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalLeague.Designer.cs">
+      <DependentUpon>GlobalLeague.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GLSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GLSchedule.Designer.cs">
+      <DependentUpon>GLSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Player.Designer.cs">
+      <DependentUpon>Player.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShootingGamingSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShootingGamingSelection.Designer.cs">
+      <DependentUpon>ShootingGamingSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameSelection.Designer.cs">
+      <DependentUpon>GameSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SportsGameSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SportsGameSelection.Designer.cs">
+      <DependentUpon>SportsGameSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Standings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Standings.Designer.cs">
+      <DependentUpon>Standings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeamBuilder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeamBuilder.Designer.cs">
+      <DependentUpon>TeamBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tournament.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tournament.Designer.cs">
+      <DependentUpon>Tournament.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Captain.resx">
+      <DependentUpon>Captain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FightingGameSelection.resx">
+      <DependentUpon>FightingGameSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GLModes.resx">
+      <DependentUpon>GLModes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalLeague.resx">
+      <DependentUpon>GlobalLeague.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GLSchedule.resx">
+      <DependentUpon>GLSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player.resx">
+      <DependentUpon>Player.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ShootingGamingSelection.resx">
+      <DependentUpon>ShootingGamingSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameSelection.resx">
+      <DependentUpon>GameSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SportsGameSelection.resx">
+      <DependentUpon>SportsGameSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Standings.resx">
+      <DependentUpon>Standings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeamBuilder.resx">
+      <DependentUpon>TeamBuilder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tournament.resx">
+      <DependentUpon>Tournament.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlphaGaming.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
