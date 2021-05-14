@@ -31,17 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Profile));
             this.lbl_Profile = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txt_Name = new System.Windows.Forms.TextBox();
+            this.txt_TName = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_Upload1 = new System.Windows.Forms.Button();
             this.btn_Upload = new System.Windows.Forms.Button();
             this.btn_Update = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txt_Name = new System.Windows.Forms.TextBox();
-            this.txt_TName = new System.Windows.Forms.TextBox();
             this.btn_Back = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -79,6 +79,30 @@
             this.groupBox3.TabIndex = 17;
             this.groupBox3.TabStop = false;
             // 
+            // txt_Name
+            // 
+            this.txt_Name.Location = new System.Drawing.Point(163, 260);
+            this.txt_Name.Name = "txt_Name";
+            this.txt_Name.Size = new System.Drawing.Size(100, 22);
+            this.txt_Name.TabIndex = 10;
+            // 
+            // txt_TName
+            // 
+            this.txt_TName.Location = new System.Drawing.Point(163, 219);
+            this.txt_TName.Name = "txt_TName";
+            this.txt_TName.Size = new System.Drawing.Size(100, 22);
+            this.txt_TName.TabIndex = 10;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(208, 43);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(102, 101);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -115,6 +139,16 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Team Name:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(6, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(150, 143);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // btn_Upload1
             // 
             this.btn_Upload1.BackColor = System.Drawing.Color.Gray;
@@ -145,40 +179,6 @@
             this.btn_Update.Text = "Update";
             this.btn_Update.UseVisualStyleBackColor = false;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(208, 43);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(102, 101);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(6, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 143);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // txt_Name
-            // 
-            this.txt_Name.Location = new System.Drawing.Point(163, 260);
-            this.txt_Name.Name = "txt_Name";
-            this.txt_Name.Size = new System.Drawing.Size(100, 22);
-            this.txt_Name.TabIndex = 10;
-            // 
-            // txt_TName
-            // 
-            this.txt_TName.Location = new System.Drawing.Point(163, 219);
-            this.txt_TName.Name = "txt_TName";
-            this.txt_TName.Size = new System.Drawing.Size(100, 22);
-            this.txt_TName.TabIndex = 10;
-            // 
             // btn_Back
             // 
             this.btn_Back.BackColor = System.Drawing.SystemColors.Control;
@@ -188,6 +188,7 @@
             this.btn_Back.TabIndex = 23;
             this.btn_Back.Text = "Back";
             this.btn_Back.UseVisualStyleBackColor = false;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
             // Profile
             // 

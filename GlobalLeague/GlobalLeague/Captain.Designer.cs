@@ -118,6 +118,7 @@
             this.btn_SignIn.TabIndex = 0;
             this.btn_SignIn.Text = "Sign In";
             this.btn_SignIn.UseVisualStyleBackColor = false;
+            this.btn_SignIn.Click += new System.EventHandler(this.btn_SignIn_Click);
             // 
             // groupBox3
             // 
@@ -296,6 +297,7 @@
             this.btn_Back.TabIndex = 23;
             this.btn_Back.Text = "Back";
             this.btn_Back.UseVisualStyleBackColor = false;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
             // Captain
             // 
@@ -311,6 +313,7 @@
             this.Controls.Add(this.Box);
             this.Name = "Captain";
             this.Text = "Captain";
+            this.Load += new System.EventHandler(this.Captain_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);

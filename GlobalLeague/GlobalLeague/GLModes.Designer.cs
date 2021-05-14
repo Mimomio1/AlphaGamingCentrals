@@ -45,6 +45,7 @@
             this.btn_PracticeM.TabIndex = 26;
             this.btn_PracticeM.Text = "Practice Mode";
             this.btn_PracticeM.UseVisualStyleBackColor = false;
+            this.btn_PracticeM.Click += new System.EventHandler(this.btn_PracticeM_Click);
             // 
             // btm_standings
             // 
@@ -55,6 +56,7 @@
             this.btm_standings.TabIndex = 25;
             this.btm_standings.Text = "Standings";
             this.btm_standings.UseVisualStyleBackColor = false;
+            this.btm_standings.Click += new System.EventHandler(this.btm_standings_Click);
             // 
             // btn_schedule
             // 
@@ -86,6 +88,7 @@
             this.btn_Tourny.TabIndex = 26;
             this.btn_Tourny.Text = "Tournament";
             this.btn_Tourny.UseVisualStyleBackColor = false;
+            this.btn_Tourny.Click += new System.EventHandler(this.btn_Tourny_Click);
             // 
             // btn_Back
             // 
@@ -96,6 +99,7 @@
             this.btn_Back.TabIndex = 27;
             this.btn_Back.Text = "Back";
             this.btn_Back.UseVisualStyleBackColor = false;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
             // GLModes
             // 

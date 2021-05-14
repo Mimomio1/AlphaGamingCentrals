@@ -30,5 +30,15 @@ namespace GlobalLeague
             Player pl = new Player();
             pl.Show();
         }
+
+        private void GlobalLeague_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

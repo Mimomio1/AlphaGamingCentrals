@@ -60,6 +60,7 @@
             this.btn_Profile.TabIndex = 0;
             this.btn_Profile.Text = "Profile";
             this.btn_Profile.UseVisualStyleBackColor = false;
+            this.btn_Profile.Click += new System.EventHandler(this.btn_Profile_Click);
             // 
             // btn_SelectGame
             // 
@@ -70,6 +71,7 @@
             this.btn_SelectGame.TabIndex = 0;
             this.btn_SelectGame.Text = "Select Game";
             this.btn_SelectGame.UseVisualStyleBackColor = false;
+            this.btn_SelectGame.Click += new System.EventHandler(this.btn_SelectGame_Click);
             // 
             // btn_GLModes
             // 
@@ -80,6 +82,7 @@
             this.btn_GLModes.TabIndex = 0;
             this.btn_GLModes.Text = "GlobalLeagueModes";
             this.btn_GLModes.UseVisualStyleBackColor = false;
+            this.btn_GLModes.Click += new System.EventHandler(this.btn_GLModes_Click);
             // 
             // btn_TeamBuilder
             // 
@@ -90,6 +93,7 @@
             this.btn_TeamBuilder.TabIndex = 0;
             this.btn_TeamBuilder.Text = "Team Builder";
             this.btn_TeamBuilder.UseVisualStyleBackColor = false;
+            this.btn_TeamBuilder.Click += new System.EventHandler(this.btn_TeamBuilder_Click);
             // 
             // gb_MenuBox
             // 
@@ -111,8 +115,9 @@
             this.btn_Back.Name = "btn_Back";
             this.btn_Back.Size = new System.Drawing.Size(75, 23);
             this.btn_Back.TabIndex = 22;
-            this.btn_Back.Text = "Back";
+            this.btn_Back.Text = "Sign Out";
             this.btn_Back.UseVisualStyleBackColor = false;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
             // MainMenu
             // 
@@ -127,6 +132,7 @@
             this.Controls.Add(this.gb_MenuBox);
             this.Name = "MainMenu";
             this.Text = "MainMenu";
+            this.Load += new System.EventHandler(this.MainMenu_Load);
             this.gb_MenuBox.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

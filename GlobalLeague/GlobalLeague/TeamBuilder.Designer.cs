@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(lbl_TeamBuilder));
             this.lbl_TeamBuild = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pb_Icon = new System.Windows.Forms.PictureBox();
             this.dp_TeamSize = new System.Windows.Forms.DomainUpDown();
             this.btn_Upload = new System.Windows.Forms.Button();
             this.lbl_CreateT = new System.Windows.Forms.Label();
@@ -51,13 +52,12 @@
             this.Email2 = new System.Windows.Forms.TextBox();
             this.Yname = new System.Windows.Forms.TextBox();
             this.SignUp = new System.Windows.Forms.Button();
-            this.pb_Icon = new System.Windows.Forms.PictureBox();
             this.btn_Back = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Icon)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.Box.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Icon)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_TeamBuild
@@ -85,6 +85,15 @@
             this.groupBox2.Size = new System.Drawing.Size(307, 285);
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
+            // 
+            // pb_Icon
+            // 
+            this.pb_Icon.Image = ((System.Drawing.Image)(resources.GetObject("pb_Icon.Image")));
+            this.pb_Icon.Location = new System.Drawing.Point(81, 108);
+            this.pb_Icon.Name = "pb_Icon";
+            this.pb_Icon.Size = new System.Drawing.Size(42, 44);
+            this.pb_Icon.TabIndex = 8;
+            this.pb_Icon.TabStop = false;
             // 
             // dp_TeamSize
             // 
@@ -283,15 +292,6 @@
             this.SignUp.Text = "Sign Up";
             this.SignUp.UseVisualStyleBackColor = false;
             // 
-            // pb_Icon
-            // 
-            this.pb_Icon.Image = ((System.Drawing.Image)(resources.GetObject("pb_Icon.Image")));
-            this.pb_Icon.Location = new System.Drawing.Point(81, 108);
-            this.pb_Icon.Name = "pb_Icon";
-            this.pb_Icon.Size = new System.Drawing.Size(42, 44);
-            this.pb_Icon.TabIndex = 8;
-            this.pb_Icon.TabStop = false;
-            // 
             // btn_Back
             // 
             this.btn_Back.BackColor = System.Drawing.SystemColors.Control;
@@ -301,6 +301,7 @@
             this.btn_Back.TabIndex = 23;
             this.btn_Back.Text = "Back";
             this.btn_Back.UseVisualStyleBackColor = false;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
             // lbl_TeamBuilder
             // 
@@ -318,13 +319,13 @@
             this.Text = "TeamBuilder";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Icon)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.Box.ResumeLayout(false);
             this.Box.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Icon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

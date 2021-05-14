@@ -87,6 +87,7 @@
             this.btn_Back.TabIndex = 35;
             this.btn_Back.Text = "Back";
             this.btn_Back.UseVisualStyleBackColor = false;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
             // cb_Duo
             // 

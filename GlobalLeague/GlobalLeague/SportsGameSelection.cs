@@ -16,5 +16,12 @@ namespace GlobalLeague
         {
             InitializeComponent();
         }
+
+        private void bck_button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            GameSelection sg = new GameSelection();
+            sg.Show();
+        }
     }
 }

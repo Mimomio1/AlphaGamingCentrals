@@ -112,6 +112,7 @@
             this.btn_Exit.TabIndex = 36;
             this.btn_Exit.Text = "Exit";
             this.btn_Exit.UseVisualStyleBackColor = false;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // GlobalLeague
             // 
@@ -127,6 +128,7 @@
             this.Controls.Add(this.Box);
             this.Name = "GlobalLeague";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.GlobalLeague_Load);
             this.Box.ResumeLayout(false);
             this.Box2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

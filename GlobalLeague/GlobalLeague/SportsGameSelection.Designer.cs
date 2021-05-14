@@ -34,6 +34,7 @@
             this.lbl_GSSelection = new System.Windows.Forms.Label();
             this.Box2 = new System.Windows.Forms.GroupBox();
             this.pb_GamePic = new System.Windows.Forms.PictureBox();
+            this.bck_button = new System.Windows.Forms.Button();
             this.Box2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_GamePic)).BeginInit();
             this.SuspendLayout();
@@ -87,6 +88,16 @@
             this.pb_GamePic.TabIndex = 28;
             this.pb_GamePic.TabStop = false;
             // 
+            // bck_button
+            // 
+            this.bck_button.Location = new System.Drawing.Point(21, 23);
+            this.bck_button.Name = "bck_button";
+            this.bck_button.Size = new System.Drawing.Size(75, 23);
+            this.bck_button.TabIndex = 36;
+            this.bck_button.Text = "Back";
+            this.bck_button.UseVisualStyleBackColor = true;
+            this.bck_button.Click += new System.EventHandler(this.bck_button_Click);
+            // 
             // SportsGameSelection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -95,6 +106,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bck_button);
             this.Controls.Add(this.btn_Continue);
             this.Controls.Add(this.dpd_ChooseG);
             this.Controls.Add(this.lbl_GSSelection);
@@ -115,5 +127,6 @@
         private System.Windows.Forms.Label lbl_GSSelection;
         private System.Windows.Forms.GroupBox Box2;
         private System.Windows.Forms.PictureBox pb_GamePic;
+        private System.Windows.Forms.Button bck_button;
     }
 }

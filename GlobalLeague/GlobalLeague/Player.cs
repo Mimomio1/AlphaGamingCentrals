@@ -16,5 +16,19 @@ namespace GlobalLeague
         {
             InitializeComponent();
         }
+
+        private void SignIn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MainMenu mm = new MainMenu();
+            mm.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            GlobalLeague gl = new GlobalLeague();
+            gl.Show();
+        }
     }
 }
