@@ -16,5 +16,17 @@ namespace GlobalLeague
         {
             InitializeComponent();
         }
+
+        private void btn_Back_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Back_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            GLModes glm = new GLModes();
+            glm.Show();
+        }
     }
 }

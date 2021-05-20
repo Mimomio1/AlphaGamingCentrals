@@ -44,5 +44,12 @@ namespace GlobalLeague
             Tournament tmt = new Tournament();
             tmt.Show();
         }
+
+        private void btn_schedule_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            GLSchedule glsc = new GLSchedule();
+            glsc.Show();
+        }
     }
 }

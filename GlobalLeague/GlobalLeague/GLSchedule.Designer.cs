@@ -30,12 +30,13 @@
         {
             this.GlModes = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.DateSelected = new System.Windows.Forms.Label();
             this.No = new System.Windows.Forms.Button();
             this.GameDay = new System.Windows.Forms.Label();
             this.Yes = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btn_Back = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,6 +65,13 @@
             this.groupBox3.Size = new System.Drawing.Size(578, 337);
             this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(144, 139);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(130, 22);
+            this.textBox1.TabIndex = 11;
             // 
             // monthCalendar1
             // 
@@ -115,12 +123,16 @@
             this.Yes.Text = "Yes";
             this.Yes.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // btn_Back
             // 
-            this.textBox1.Location = new System.Drawing.Point(144, 139);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(130, 22);
-            this.textBox1.TabIndex = 11;
+            this.btn_Back.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_Back.Location = new System.Drawing.Point(12, 27);
+            this.btn_Back.Name = "btn_Back";
+            this.btn_Back.Size = new System.Drawing.Size(75, 27);
+            this.btn_Back.TabIndex = 23;
+            this.btn_Back.Text = "Back";
+            this.btn_Back.UseVisualStyleBackColor = false;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click_1);
             // 
             // GLSchedule
             // 
@@ -128,6 +140,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.GlModes);
             this.Controls.Add(this.groupBox3);
             this.Name = "GLSchedule";
@@ -149,5 +162,6 @@
         private System.Windows.Forms.Label GameDay;
         private System.Windows.Forms.Button Yes;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btn_Back;
     }
 }
